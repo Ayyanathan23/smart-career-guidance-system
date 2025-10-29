@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Smart Career Guidance System</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Smart Career Guidance System</h1>
+      <p class="subtitle">Find career paths that match your skills and interests</p>
+    </header>
+
+    <main>
+      <form action="/predict" method="post" class="card form-card">
+        <label>Skill(s)</label>
+        <input type="text" name="skill" placeholder="e.g. coding, communication, design" required>
+        <label>Interest</label>
+        <input type="text" name="interest" placeholder="e.g. python, marketing, creativity" required>
+        <button type="submit" class="btn">Get Career Recommendation</button>
+      </form>
+
+      <section class="card info-card">
+        <h3>How it works</h3>
+        <p>Enter your primary skill and interest. The system uses simple rule-based logic to suggest suitable career options.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Developed by Ayyanathan</p>
+    </footer>
+  </div>
+</body>
+</html>
